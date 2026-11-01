@@ -1,0 +1,106 @@
+<!--
+  ======================================================================
+  INSTITUCIÓN: CBTis 166 Pablo Torres Burgos
+  ----------------------------------------------------------------------
+  * Estudiante: López Acosta Elizabeth
+  * Grupo: 3B PRO VESP  
+  * Actividad: Práctica Temática sobre Formularios en HTML5
+  ====================================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso - Portal DaliaMX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor principal que divide la pantalla en dos mitades -->
+    <div class="portal-container">
+
+        <!-- LADO IZQUIERDO: Panel de Marca Estilo Portal Financiero/Turístico Avanzado -->
+        <div class="portal-brand-side">
+            <div class="brand-content">
+                
+                <!-- Insignia superior -->
+                <div class="brand-badge">
+                    <span class="badge-dot"></span> ACCESO
+                </div>
+
+                <div class="brand-logo-large">
+                    <span class="logo-icon">
+                        <img src="img/Dalialogo.png">
+                    </span>
+                    <h1>Portal <span>DaliaMX</span></h1>
+                </div>
+                
+                <p class="brand-tagline">
+                    Administre sus accesos, realice consultas y controle sus movimientos en un entorno digital seguro y de alta velocidad.
+                </p>
+
+                <!-- Tarjetas pequeñas de características (Estilo Broker / Fintech) -->
+                <div class="brand-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <div>
+                            <h4>Seguridad Encriptada</h4>
+                            <p>Protección total de sus datos personales y de acceso.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <div>
+                            <h4>Gestión en Tiempo Real</h4>
+                            <p>Consulte estatus, valide servicios y acceda a su información de inmediato</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- LADO DERECHO: Tarjeta del Formulario de Inicio de Sesión -->
+        <div class="portal-form-side">
+            <div class="login-card">
+                
+                <div class="login-header">
+                    <h2>Acceso al Portal Dalia Digital</h2>
+                    <p>Ingrese sus datos para continuar</p>
+                </div>
+
+                <!-- Formulario de Inicio de Sesión -->
+                <form id="form-login" action="/login-procesar" method="POST">
+                    
+                    <div class="input-group">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Juan123" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Clave de acceso</label>
+                        <input type="password" id="password" name="acceso" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="form-actions-help">
+                        <a href="recuperar.html" class="forgot-link">¿Olvidó su clave?</a>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Iniciar Sesión</button>
+
+                </form>
+
+                <!-- Pie de tarjeta con opción de registro -->
+                <div class="login-footer">
+                    <p>¿No tiene una cuenta? <a href="registro.html">Regístrese aquí</a></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

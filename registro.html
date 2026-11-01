@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Portal DaliaMX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor general de dos columnas -->
+    <div class="portal-container">
+
+        <!-- LADO IZQUIERDO: Panel de Marca y Características -->
+        <div class="portal-brand-side">
+            <div class="brand-content">
+                
+                <div class="brand-badge">
+                    <span class="badge-dot"></span> Registro de Nuevos Socios
+                </div>
+
+                <div class="brand-logo-large">
+                    <span class="logo-icon">
+                        <img src="img/Dalialogo.png">
+                    </span>
+                    <h1>Portal <span>DaliaMX</span></h1>
+                </div>
+                
+                <p class="brand-tagline">
+                    Cree su cuenta en segundos. Obtenga acceso preferencial a tarifas especiales, gestión de reservas en tiempo real y atención personalizada.
+                </p>
+
+                <div class="brand-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">✨</div>
+                        <div>
+                            <h4>Beneficios Exclusivos</h4>
+                            <p>Descuentos directos y promociones para miembros registrados.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <div>
+                            <h4>Proceso Seguro</h4>
+                            <p>Sus datos están protegidos bajo estrictas normas de privacidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- LADO DERECHO: Tarjeta del Formulario de Registro -->
+        <div class="portal-form-side">
+            <div class="login-card">
+                
+                <div class="login-header">
+                    <h2>Crear Cuenta Nueva</h2>
+                    <p>Complete el cuestionario para registrarse en el portal</p>
+                </div>
+
+                <!-- Formulario completo de Registro -->
+                <form id="form-registro" action="#" method="POST">
+                    
+                    <div class="input-group">
+                        <label for="nombre">Crea un Nombre de Usuario</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Juan_Perez99" required>
+                    </div>
+
+                     <div class="input-group">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha_nacimiento">
+                    </div>
+
+                     <div class="input-group">
+                        <label for="genero">Género</label>
+                        <select id="genero" name="genero">
+                            <option value="masculino" selected>Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Crea una Clave de acceso</label>
+                        <input type="password" id="clave" name="clave" placeholder="••••••••" required>
+                    </div>
+        
+                    <div class="input-group checkbox-group">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos" style="display: inline; font-weight: normal; text-transform: none; font-size: 0.85rem; margin-bottom: 0;">
+                            Acepto los términos y condiciones de servicio
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Registrarse</button>
+
+                </form>
+
+                <!-- Pie de tarjeta con enlace para regresar al Login -->
+                <div class="login-footer">
+                    <p>¿Ya tiene una cuenta? <a href="index.html">Iniciar Sesión</a></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script_registro.js"></script>
+</body>
+</html>
